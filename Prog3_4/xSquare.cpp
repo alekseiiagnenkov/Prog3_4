@@ -10,13 +10,13 @@
 namespace Prog3_4 {
 
 	void xSquare::Test(int i) {
-		std::ofstream outData;
-		outData.open("outfile.xls", std::ofstream::binary | std::ofstream::out | std::ofstream::in);
-		int j, k, n, size = 10, max = 10, time = 50;
-		outData.seekp(0, std::ios::beg);
-		outData << "╧	X	Time	Xmax =	" << "=ух2.нап(0,95;9)"<<std::endl;
+		std::fstream outData;
+		outData.open("outfile1.csv", std::fstream::binary | std::fstream::out | std::fstream::in);
+		int j, k, n, size = 10, max = 10, time = 1;
+		outData.seekg(0, std::ios::beg);
+		outData << "╧	X	Time	Xmax =	" << "=ух2.нап(0,95\;9)"<<std::endl;
 
-		for (int l = 0; l < 10; time += 50, l++) {
+		for (int l = 0; l < 10; time += 1, l++) {
 
 			std::cout <<"-----------------Test #" << l << std::endl;
 			std::cout << " Time = " << time << std::endl;
